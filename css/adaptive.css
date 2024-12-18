@@ -1,0 +1,163 @@
+/* Основные стили */
+body {
+    font-family: Comic_Neue, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стили для шапки */
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header__logo-pic {
+    width: 80px;
+    padding-left: 20px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list__item {
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.list__item:hover {
+    transform: scale(1.1);
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+}
+
+.user-info {
+    font-size: 18px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* Контейнер и боковая панель */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    max-width: 200px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.nav__aside {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Стили для основного контента */
+main {
+    flex: 3;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.me {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    float: right;
+    margin: 20px;
+}
+
+.all__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 242, 255);
+    padding: 20px;
+}
+p:hover{
+    background-color: rgb(216, 251, 255);
+    transition: background-color 0.3s ease;
+    
+}
+#lectures-container {
+    margin-top: 20px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#lectures-container.show {
+    display: block;
+    opacity: 1;
+}
+.me{
+    transition: transform 0.3s ease-in-out;
+}
+.me:hover {
+    animation: rotatePhoto 1s linear infinite;
+}
+@keyframes rotatePhoto {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.message-box {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+}

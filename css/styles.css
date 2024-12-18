@@ -1,0 +1,214 @@
+@font-face {
+    font-family: Comic_Neue;
+    src: url(ofont.ru_Itim.ttf);
+}
+body {
+    font-family: Comic_Neue;
+    font-size: 22px;
+}
+.header__logo-pic {
+    width: 100px;
+    padding-left: 40px;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.list__item {
+    margin-right: 30px;
+    transition: 1s;
+    text-align: center;
+}
+.list__item:hover {
+    transform: scale(1.2);
+}
+.header__link {
+    text-decoration: none;
+    color: black;
+}
+.header__link:active{
+    color:rgb(223, 147, 147);
+}
+.nav__link:hover{
+    color:rgb(255, 0, 0);
+}
+.nav__link:active{
+    color:rgb(115, 255, 21);
+}
+
+.user-info {
+    margin-top: -20px;
+    margin-right: 40px;
+}
+.nav__link {
+    text-decoration: none;
+    color: black;
+
+}
+.nav__aside {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside {
+    border-width: 1px solid black;
+
+}
+.container {
+    display: flex;
+    margin:20px;    
+}
+main {
+    margin-left: 40px;
+}
+ul.nav__aside {
+    padding:40px;
+}
+.me {
+    width: 300px;
+    float: right;
+    margin: 40px;
+    margin-top: 0px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(223, 242, 255);
+    margin: 30px;
+    height: 80px;
+}
+
+.all__cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    box-shadow: 10px 5px 5px rgb(204, 241, 250);
+}
+.card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+.second__page {
+    width: 150px;
+    height: 150px;
+}
+.third {
+    margin-right: 50px;
+}
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Черный фон */
+    background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Центрируем модальное окно */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина модального окна */
+}
+.close {
+    color: #aaa; /* Цвет кнопки закрытия */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label,
+input,
+textarea,
+select {
+    margin-bottom: 10px;
+}
+
+input,
+textarea,
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+table {
+    border: 1px solid black;
+}
+fieldset {
+    height: 700px;
+}
+tr:nth-child(even) {
+    background: rgb(193, 193, 193);
+}
+th {
+    background: rgb(170, 170, 170);
+}
+.card:hover {
+    cursor: pointer;
+}
+td:hover {
+    background-color: rgb(192, 255, 255);
+}
+.button-designed {
+    background-color: rgb(131, 255, 127);
+    border: 0px;
+    padding: 10px;
+    font-family: Comic_Neue;
+    font-size: 15px;
+
+}
+.button-designed:hover {
+    background-color:rgb(53, 117, 255);
+    cursor: pointer;
+}
+.grid-container{
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+        grid-template-rows: 50% 50%;
+}
+.grid-item {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.grid-pic{
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+
+}
+
+p:active{
+    background: rgb(0, 89, 255);
+}
