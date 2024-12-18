@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="# " class="header__logo-link">
+                    <img src="other/fox.png" alt="" class="header__logo-pic">
+                </a>
+            </div>
+            <nav>
+                <ul class="header__list">
+                    <li class="list__item"><a class="header__link" href="index.html">Главная</a></li>
+                    <li class="list__item"><a class="header__link" href="3.html">Первый семестр</a></li>
+                    <li class="list__item"><a class="header__link" href="#">Второй семестр</a></li>
+                    <li class="list__item"><a class="header__link" href="2.html">Услуги</a></li>
+                    <li class="list__item"><a class="header__link" href="#">Авторизация</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <p>Группа: ЭФБО-02-23</p>
+                <p>Рощин Николай Алексеевич</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <h1>Разработка веб-приложений</h1>
+            <div class="all__cards">
+                <div class="card">
+                    <img src="other/img_2.jpg" alt="Сайт-визитка" class="second__page">
+                    <p>Сайт-визитка</p>
+                    <button onclick="openModal('Заказать')" class="button-designed">Заказать</button>
+                </div>
+                <div class="card">
+                    <img src="other/img_2.jpg" alt="Корпоративный сайт" class="second__page">
+                    <p>Корпоративный сайт</p>
+                    <button onclick="openModal('Заказать')" class="button-designed">Заказать</button>
+                </div>
+                <div class="card third">
+                    <img src="other/img_2.jpg" alt="Интернет-магазин" class="second__page">
+                    <p>Интернет-магазин</p>
+                    <button onclick="openModal('Заказать')" class="button-designed">Заказать</button>
+                </div>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="contactForm">
+                        <h2>Разработка веб-приложений</h2>
+                        <p>Заполните форму и мы обязательно свяжемся с вами в ближайщее время для уточнения деталей</p>
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Электронная почта:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+
+                        <label for="country">Страна:</label>
+                        <select id="country" name="country" required>
+                            <option value="">Выберите страну</option>
+                            <option value="ru">Россия</option>
+                            <option value="us">США</option>
+                            <option value="de">Германия</option>
+                        </select>
+
+                        <label for="date">Дата:</label>
+                        <input type="date" id="date" name="date" required>
+
+                        <label for="comments">Комментарии:</label>
+                        <textarea id="comments" name="comments"></textarea>
+
+                        <div>
+                            <input type="checkbox" id="consent" name="consent" checked>
+                            <label for="consent">Согласен(на) на обработку моих персональных данных</label>
+                        </div>
+
+                        <input type="hidden" id="serviceType" name="serviceType">
+
+                        <button type="submit" class="button-designed">Отправить</button>
+                    </form>
+                    <div id="successMessage" style="display:none;">Форма успешно отправлена!</div>
+                </div>
+            </div>
+
+            <p>
+                Но&nbsp;выбранный нами инновационный путь, а&nbsp;также свежий взгляд на&nbsp;привычные
+                вещи&nbsp;&mdash; безусловно открывает новые горизонты для системы массового участия. Разнообразный
+                и&nbsp;богатый опыт говорит нам, что граница обучения кадров прекрасно подходит для реализации системы
+                обучения кадров, соответствующей насущным потребностям. В&nbsp;своём стремлении повысить качество жизни,
+                они забывают, что экономическая повестка сегодняшнего дня обеспечивает широкому кругу (специалистов)
+                участие в&nbsp;формировании направлений прогрессивного развития. Приятно, граждане, наблюдать, как явные
+                признаки победы институционализации будут функционально разнесены на&nbsp;независимые элементы.
+                Внезапно, интерактивные прототипы призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь,
+                должны быть ассоциативно распределены по&nbsp;отраслям.
+            </p>
+        </main>
+    </div>
+
+    <footer>
+        <p class="for__footer">&copy Рощин Николай Алексеевич, 2024</p>
+    </footer>
+
+    <script>
+        const modal = document.getElementById("modal");
+        const span = document.getElementsByClassName("close")[0];
+        const form = document.getElementById("contactForm");
+        const successMessage = document.getElementById("successMessage");
+        const serviceTypeField = document.getElementById("serviceType");
+
+        // Открытие модального окна и передача типа услуги
+        function openModal(serviceType) {
+            modal.style.display = "block";
+            serviceTypeField.value = serviceType;
+        }
+
+        // Закрытие модального окна при клике на крестик
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Закрытие модального окна при клике вне области окна
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Маска для телефона
+        document.getElementById('phone').addEventListener('input', function (e) {
+            const x = e.target.value.replace(/\D/g, '').match(/(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})/);
+            e.target.value = x ? `+7 (${x[2]}) ${x[3]}-${x[4]}-${x[5]}` : e.target.value;
+        });
+
+        // Валидация формы и обработка отправки
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Пример простой валидации
+            if (form.checkValidity()) {
+                successMessage.style.display = 'block'; // Отображаем сообщение об успехе
+                form.reset(); // Очищаем форму
+
+                // Автоматическое закрытие окна через 2 секунды
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    successMessage.style.display = 'none';
+                }, 2000);
+            }
+        });
+        document.getElementById('form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Отменить стандартное поведение формы
+
+            // Показать сообщение
+            document.getElementById('success-message').style.display = 'block';
+
+            // Прячем сообщение через 3 секунды
+            setTimeout(function () {
+                document.getElementById('success-message').style.display = 'none';
+            }, 3000);
+        });
+
+
+    </script>
+</body>
+
+</html>
