@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="# " class="header__logo-link">
+                    <img src="/other/fox.png" alt="Logo" class="header__logo-pic">
+                </a>
+            </div>
+            <nav>
+                <ul class="header__list">
+                    <li class="list__item"><a class="header__link" href="index.html">Главная</a></li>
+                    <li class="list__item"><a class="header__link" href="3.html">Первый семестр</a></li>
+                    <li class="list__item"><a class="header__link" href="#">Второй семестр</a></li>
+                    <li class="list__item"><a class="header__link" href="2.html">Услуги</a></li>
+                    <li class="list__item"><a class="header__link" href="#">Авторизация</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <p>Группа: ЭФБО-02-23</p>
+                <p>Рощин Николай Алексеевич</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside>
+            <p>Навигация по странице</p>
+            <ul class="nav__aside">
+                <li><a class="nav__link" href="#front">Фронтенд</a></li>
+                <li><a class="nav__link" href="#back">Бэкенд</a></li>
+            </ul>
+        </aside>
+
+        <main>
+
+            <h1>Добро пожаловать на мой сайт</h1>
+            <div><img src="other/cat1.jpg" alt="Me" class="me"></div>
+            <p>Меня зовут Рощин Николай Алексеевич, и я начинающий специалист по веб-разработке.</p>
+
+            <h2 id="front">Фронтенд</h2>
+            <p>Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные
+                элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд-разработчики используют
+                языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и
+                привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и эстетическую
+                привлекательность.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yO3Ep_bQYgw?si=vSSJwPu2rp91Fy2_"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h2 id="back">Бэкенд</h2>
+            <p>Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных,
+                управление пользователями и взаимодействие с базами данных. Бэкенд-разработчики используют языки
+                программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания
+                логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность
+                данных.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XTqGQ-PqdyY?si=pum6BOQaXa6f41ok"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </main>
+    </div>
+    <video>
+        <source src="https://www.youtube.com/embed/yO3Ep_bQYgw?si=vSSJwPu2rp91Fy2_">
+    </video>
+
+    <footer>
+        <p class="for__footer">&copy Рощин Николай Алексеевич, 2024</p>
+    </footer>
+    <!-- <script>
+
+        const h1 = document.querySelector('h1');
+        if (h1) {
+            h1.textContent = "Добро пожаловать на наш сайт!";
+        }
+
+
+        const h2 = document.querySelector('h2');
+        if (h2) {
+            h2.style.color = 'red';
+        }
+
+
+        const p = document.querySelector('p');
+        if (p) {
+            p.textContent = "Это новый текст параграфа.";
+        }
+
+
+        const video = document.querySelector('iframe');
+
+        if (video) {
+            video.style.display = 'none';
+            console.log('Видео скрыто.');
+        } else {
+            console.log('Видео не найдено.');
+        }
+
+
+    </script> -->
+</body>
+
+</html>
