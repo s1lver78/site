@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <style>
+        /* .student-photo {
+            transition: transform 0.2s ease-in-out;
+        } */
+
+        #second-semester-btn {
+            display: flex;
+            padding: 20px;
+            background-color: aliceblue;
+            border-radius: 30px;
+            border-color: 0;
+            margin: 15px;
+
+        }
+
+        .second-semester-btn {
+            display: flex;
+            padding: 20px;
+            background-color: aliceblue;
+            border-radius: 30px;
+            border-color: 0;
+            margin: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="# " class="header__logo-link">
+                    <img src="other/fox.png" alt="" class="header__logo-pic">
+                </a>
+            </div>
+            <nav>
+                <ul class="header__list">
+                    <li class="list__item"><a class="header__link" href="index.html">Главная</a></li>
+                    <li class="list__item"><a class="header__link" href="3.html">Первый семестр</a></li>
+                    <li class="list__item"><a class="header__link" href="#">Второй семестр</a></li>
+                    <li class="list__item"><a class="header__link" href="2.html">Услуги</a></li>
+                    <li class="list__item"><a class="header__link" href="#">Авторизация</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <p>Группа: ЭФБО-02-23</p>
+                <p>Рощин Николай Алексеевич</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside>
+            <p>Навигация по странице</p>
+            <ul class="nav__aside">
+                <li><a class="nav__link" href="#l">Лекции</a></li>
+                <li><a class="nav__link" href="#p">Практики</a></li>
+                <li><a class="nav__link" href="#a">Адрес вуза</a></li>
+                <li><a class="nav__link" href="#w">Рабочая программа</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h1>Первый семестр</h1>
+            <!-- <img id="student-photo" class="student-photo" src="pikachu.jpg" alt="Фото студента" width="200"
+                height="200"> -->
+            <button id="toggle-button" class="second-semester-btn">Показать лекции</button>
+            <div id="lectures-container">
+                <h2 id="l">Лекции</h2>
+                <table>
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Номер</th>
+                            <th>Тема</th>
+                            <th>Посещение</th>
+                        <tr>
+                            <td>1</td>
+                            <td>Основы языка HTML</td>
+                            <td><input type="checkbox" id="lect" name="lecture" /></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Углубленное изучение HTML</td>
+                            <td><input type="checkbox" id="lect" name="lecture" /></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Основы работы с CSS</td>
+                            <td><input type="checkbox" id="lect" name="lecture" /></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                            <td><input type="checkbox" id="lect" name="lecture" /></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Bootstrap - работа с фреймворком</td>
+                            <td><input type="checkbox" id="lect" name="lecture" /></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Основы языка JavaScript</td>
+                            <td><input type="checkbox" id="lect" name="lecture" /></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Работа с DOM и событиями в JavaScript</td>
+                            <td><input type="checkbox" id="lect" name="lecture" /></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Введение в GitHub и GitHub Pages</td>
+                            <td><input type="checkbox" id="lect" name="lecture" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 id="main-heading">Практики</h2>
+            <button id="second-semester-btn">Посмотреть практики второго семестра</button>
+            <table id="practices-table">
+                <thead>
+
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Тема</th>
+                        <th>Посещение</th>
+                        <th>Выполнение</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Формы и кнопки в HTML</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Таблицы и интерактивные элементы HTML</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Основы работы с CSS</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Работа с классами в CSS</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Работа с сетками и разметкой в CSS</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Адаптивная вёрстка</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Bootstrap</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Базовые задачи на JS</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>DOM-структура приложений и работа с объектами в языке JS</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Встраивание скриптов</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Отладка сценариев</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Анимации и работа с ними</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>GitHub</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Защита проекта</td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                        <td><input type="checkbox" id="work" name="w" /></td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            <h2 id="a">Адрес</h2>
+            <p>Занятие проходят по адресу г. Москва, ул. Вернадского, 78</p>
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/org/mirea_rossiyskiy_tekhnologicheskiy_universitet/1084832794/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">МИРЭА, Российский технологический
+                    университет</a><a
+                    href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Москве</a><iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=37.481257%2C55.669915&mode=poi&poi%5Bpoint%5D=37.480225%2C55.669957&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1084832794&z=16.4"
+                    width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+            <fieldset id="w">
+                <legend>Рабочая программа</legend>
+                <embed type="" src="ucheb_plan_09.03.02_FR_2023.pdf" width="100%" height="100%" />
+            </fieldset>
+        </main>
+    </div>
+
+    <footer>
+        <p class="for__footer">&copy Рощин Николай Алексеевич, 2024</p>
+    </footer>
+
+
+
+    <script>
+
+        document.getElementById('main-heading').addEventListener('click', () => {
+            alert('Вы кликнули на заголовок - так держать!');
+        });
+
+        document.getElementById('second-semester-btn').addEventListener('click', () => {
+            const table = document.getElementById('practices-table').getElementsByTagName('tbody')[0];
+            table.innerHTML = `
+                <tr>
+            <th>Номер</th>
+            <th>Тема</th>
+            <th>Посещение</th>
+            <th>Выполнение</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Базовое бэкенд-приложение</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>HTTP-запросы</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JSON и работа с ним</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>HTTP-ответы</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Проектирование API</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Роутинг и его настройка</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>NoSQL базы данных</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Обеспечение авторизации и доступа пользователей</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Работа сторонних сервисов уведомления и авторизации</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Основы ReactJS</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Работа с компонентами динамической DOM</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Использование хуков в React</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Основы микросервисной архитектуры</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Основы микросервисной архитектуры</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Разработка классических модулей веб-приложений</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Разработка классических модулей веб-приложений</td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+            <td><input type="checkbox" id="work" name="w" /></td>
+        </tr>
+            `;
+        });
+
+
+        const studentPhoto = document.getElementById('student-photo');
+
+        studentPhoto.addEventListener('mouseover', () => {
+            studentPhoto.style.transform = 'scale(1.1)';
+        });
+
+        studentPhoto.addEventListener('mouseout', () => {
+            studentPhoto.style.transform = 'scale(1)';
+        });
+
+        studentPhoto.addEventListener('click', () => {
+            studentPhoto.src = 'cat1.jpg';
+            studentPhoto.alt = 'Фото преподавателя';
+        });
+
+        studentPhoto.addEventListener('dblclick', () => {
+            alert('Не налегай, у меня не так много любимых преподавателей');
+        });
+
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
